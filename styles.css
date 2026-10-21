@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: #3a2412;
+    line-height: 1.6;
+}
+
+header,
+footer {
+    padding: 1rem 7vw;
+    background: #2a1a0f;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+header nav a {
+    color: white;
+    margin-left: 1.2rem;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    min-height: 65vh;
+    padding: 8rem 7vw;
+    background: #fdebd5;
+}
+
+.tag {
+    font-weight: 600;
+    color: #c2410c;
+}
+
+.hero h1 {
+    max-width: 750px;
+    font-size: clamp(2.2rem, 6vw, 4.8rem);
+    line-height: 1.1;
+    margin: .3rem 0 1rem;
+}
+
+.hero p {
+    max-width: 55ch;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 1.2rem;
+    color: white;
+    background: #c2410c;
+    border-radius: .6rem;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #9a3412;
+}
+
+#productos,
+#nosotros,
+#contacto {
+    padding: 3rem 7vw;
+}
+
+#nosotros {
+    background: #fff7ee;
+}
+
+#nosotros p {
+    max-width: 65ch;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.cards article {
+    padding: 2rem;
+    background: white;
+    border: 1px solid #e7d3bd;
+    border-radius: 1rem;
+}
+
+.cards h3 {
+    margin-top: 0;
+}
+
+#contacto ul {
+    padding-left: 1.2rem;
+}
